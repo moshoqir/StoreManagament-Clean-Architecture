@@ -1,0 +1,484 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\wwwroot\\jspages\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\wwwroot\\jspages\\products.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\wwwroot\\jspages\\categories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\wwwroot\\jspages\\categories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\wwwroot\\common\\createtable.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\wwwroot\\common\\createtable.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\wwwroot\\common\\ajaxconnection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\wwwroot\\common\\ajaxconnection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\application\\dtos\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|solutionrelative:application\\dtos\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\common\\apiresponsehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\common\\apiresponsehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27AAFCF9-90E3-4068-8918-32A9C367CE09}|WebPortal\\WebPortal.csproj|solutionrelative:webportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webapi\\contracts\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|solutionrelative:webapi\\contracts\\common\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\infrastructure\\dependencyinjection\\infrastructuredepencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection\\infrastructuredepencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\infrastructure\\data\\sqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\sqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\infrastructure\\data\\isqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\isqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webapi\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|solutionrelative:webapi\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\application\\dependencyinjection\\applicationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|solutionrelative:application\\dependencyinjection\\applicationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F0CB31-419D-4FC9-A589-B2FD7A6EAE19}|WebApi\\WebApi.csproj|solutionrelative:webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\application\\common\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|solutionrelative:application\\common\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\application\\interfaces\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\application\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|solutionrelative:application\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3E9FFD-4F74-4817-B246-F911C1108A0A}|Application\\Application.csproj|solutionrelative:application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B976097F-D352-4CA7-B807-AB2E189AF035}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C355201B-E554-48AD-8EE5-455C8110C3A6}|Domain\\Domain.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C355201B-E554-48AD-8EE5-455C8110C3A6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C355201B-E554-48AD-8EE5-455C8110C3A6}|Domain\\Domain.csproj|c:\\users\\user\\onedrive\\desktop\\asp .net\\advanced\\7-11 clean arch\\storemanagament\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C355201B-E554-48AD-8EE5-455C8110C3A6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Categories.js",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\jsPages\\Categories.js",
+              "RelativeDocumentMoniker": "WebPortal\\wwwroot\\jsPages\\Categories.js",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\jsPages\\Categories.js",
+              "RelativeToolTip": "WebPortal\\wwwroot\\jsPages\\Categories.js",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-04T18:38:15.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AjaxConnection.js",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\common\\AjaxConnection.js",
+              "RelativeDocumentMoniker": "WebPortal\\wwwroot\\common\\AjaxConnection.js",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\common\\AjaxConnection.js",
+              "RelativeToolTip": "WebPortal\\wwwroot\\common\\AjaxConnection.js",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAQwIkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-04T18:24:59.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Products.js",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\jsPages\\Products.js",
+              "RelativeDocumentMoniker": "WebPortal\\wwwroot\\jsPages\\Products.js",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\jsPages\\Products.js",
+              "RelativeToolTip": "WebPortal\\wwwroot\\jsPages\\Products.js",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-04T18:16:30.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebPortal\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "WebPortal\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwEsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T18:13:48.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebPortal\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebPortal\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwDsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T18:13:38.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\DTOs\\Category\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Category\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\DTOs\\Category\\CategoryDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Category\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:56:53.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateTable.js",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\common\\CreateTable.js",
+              "RelativeDocumentMoniker": "WebPortal\\wwwroot\\common\\CreateTable.js",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\wwwroot\\common\\CreateTable.js",
+              "RelativeToolTip": "WebPortal\\wwwroot\\common\\CreateTable.js",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-01T17:30:49.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WebPortal\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WebPortal\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAiwHgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T08:12:19.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApiResponseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Common\\ApiResponseHelper.cs",
+              "RelativeDocumentMoniker": "WebPortal\\Common\\ApiResponseHelper.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Common\\ApiResponseHelper.cs",
+              "RelativeToolTip": "WebPortal\\Common\\ApiResponseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T08:52:11.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Program.cs",
+              "RelativeDocumentMoniker": "WebPortal\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\Program.cs",
+              "RelativeToolTip": "WebPortal\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAzwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T08:21:28.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\Contracts\\Common\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "WebApi\\Contracts\\Common\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\Contracts\\Common\\ApiResponse.cs",
+              "RelativeToolTip": "WebApi\\Contracts\\Common\\ApiResponse.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T10:14:33.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\appsettings.json",
+              "RelativeDocumentMoniker": "WebPortal\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebPortal\\appsettings.json",
+              "RelativeToolTip": "WebPortal\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-22T08:15:46.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\appsettings.json",
+              "RelativeToolTip": "WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-08T09:40:37.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WebApi.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\WebApi.csproj",
+              "RelativeDocumentMoniker": "WebApi\\WebApi.csproj",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\WebApi.csproj",
+              "RelativeToolTip": "WebApi\\WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-01T10:13:32.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ISqlConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\Data\\ISqlConnectionFactory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ISqlConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\Data\\ISqlConnectionFactory.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ISqlConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T09:56:07.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SqlConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\Data\\SqlConnectionFactory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\SqlConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\Data\\SqlConnectionFactory.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\SqlConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T10:12:12.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InfrastructureDepencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\DependencyInjection\\InfrastructureDepencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection\\InfrastructureDepencyInjection.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\DependencyInjection\\InfrastructureDepencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection\\InfrastructureDepencyInjection.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T09:40:47.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\DependencyInjection\\ApplicationDependencyInjection.cs",
+              "RelativeDocumentMoniker": "Application\\DependencyInjection\\ApplicationDependencyInjection.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\DependencyInjection\\ApplicationDependencyInjection.cs",
+              "RelativeToolTip": "Application\\DependencyInjection\\ApplicationDependencyInjection.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T09:42:25.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "WebApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "WebApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAywGMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T08:55:08.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwDkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T09:49:42.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WebApi\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\WebApi\\WeatherForecast.cs",
+              "RelativeToolTip": "WebApi\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T09:56:08.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConflictException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Common\\Exceptions\\ConflictException.cs",
+              "RelativeDocumentMoniker": "Application\\Common\\Exceptions\\ConflictException.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Common\\Exceptions\\ConflictException.cs",
+              "RelativeToolTip": "Application\\Common\\Exceptions\\ConflictException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T08:57:16.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwBAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T10:00:42.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAQwHIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T19:08:52.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Common\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Application\\Common\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Application\\Common\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Application\\Common\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T09:07:48.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-25T10:43:39.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Domain\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T08:29:07.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\ASP .Net\\Advanced\\7-11 clean arch\\StoreManagament\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T08:30:52.062Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

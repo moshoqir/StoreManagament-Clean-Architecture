@@ -1,0 +1,78 @@
+﻿<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0">Add New Product</h5>
+        </div>
+        <div class="card-body">
+            <form id="productForm">
+
+                <!-- Hidden ID input for handling updates later -->
+                <input type="hidden" id="ProductId" name="ProductId" value="0" readonly />
+
+                <!-- Product Name -->
+                <div class="row g-lg-4 g-2 mb-3">
+                    <div class="col-lg-4">
+                        <label class="col-form-label" for="ProductName">Product Name</label>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="ProductName" name="ProductName" placeholder="e.g., iPhone 15" />
+                            <label for="ProductName">Product Name</label>
+                        </div>
+                        <small class="error-span text-danger d-block mt-1" id="ProductNameSpan"></small>
+                    </div>
+                </div>
+
+                <!-- Product Price -->
+                <div class="row g-lg-4 g-2 mb-3">
+                    <div class="col-lg-4">
+                        <label class="col-form-label" for="ProductPrice">Product Price</label>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="form-floating">
+                            <!-- step="0.01" allows for decimal values -->
+                            <input type="number" step="0.01" class="form-control" id="ProductPrice" name="ProductPrice" placeholder="0.00" />
+                            <label for="ProductPrice">Price</label>
+                        </div>
+                        <small class="error-span text-danger d-block mt-1" id="ProductPriceSpan"></small>
+                    </div>
+                </div>
+
+                <!-- Category Dropdown -->
+                <div class="row g-lg-4 g-2 mb-4">
+                    <div class="col-lg-4">
+                        <label for="CategoryId" class="col-form-label">Category</label>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="input-group">
+                            <label class="input-group-text" for="CategoryId">Options</label>
+                            <select class="form-select" id="CategoryId" name="CategoryId">
+                                <option value="" selected>--Select Category--</option>
+                                <!-- Category options will be loaded here via AJAX -->
+                            </select>
+                        </div>
+                        <small class="error-span text-danger d-block mt-1" id="CategoryIdSpan"></small>
+                    </div>
+                </div>
+
+                <!-- Submit / Cancel Buttons -->
+                <div class="d-flex justify-content-end gap-2">
+                    <button type="button" id="cancelProductData" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" id="submitProductData" class="btn btn-primary">Save Product</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Table Container -->
+<div id="productData" class="mt-4 container"></div>
+
+
+@section Scripts {
+    <script src="~/common/AjaxConnection.js"></script>
+    <script src="~/common/CreateTable.js"></script>
+    <script src="~/jsPages/Products.js"></script>
+
+}

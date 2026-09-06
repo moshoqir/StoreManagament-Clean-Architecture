@@ -1,0 +1,43 @@
+﻿<div class="container mt-4">
+	<div class="card shadow-sm">
+		<div class="card-header bg-primary text-white">
+			<h5 class="card-title mb-0">Add New Category</h5>
+		</div>
+		<div class="card-body">
+			<form id="categoryForm">
+
+				<!-- Hidden ID input for handling updates later -->
+				<input type="hidden" id="CategoryId" name="CategoryId" value="0" readonly />
+
+				<div class="row g-lg-4 g-2">
+					<div class="col-lg-4">
+						<label class="col-form-label" for="CategoryName">Category Name</label>
+					</div>
+					<div class="col-lg-8">
+						<div class="form-floating">
+							<input type="text" class="form-control" id="CategoryName" placeholder="Category Name" />
+							<label>CategoryName</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex mt-3 justify-content-end gap-2">
+					<button type="button" id="cancelCategoryData" class="btn btn-secondary">Cancel</button>
+					<button type="submit" id="submitCategoryData" class="btn btn-primary">Save Category</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="categoryData" class="mt-4 container"></div>
+
+
+
+@section Scripts{
+	<script src="~/common/AjaxConnection.js"></script>
+	<script src="~/common/CreateTable.js"></script>
+	<script src="~/jsPages/Categories.js"></script>
+
+}
