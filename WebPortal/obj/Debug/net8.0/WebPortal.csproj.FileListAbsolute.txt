@@ -40,3 +40,4 @@ C:\Users\user\OneDrive\Desktop\ASP .Net\Advanced\7-11 clean arch\StoreManagament
 C:\Users\user\OneDrive\Desktop\ASP .Net\Advanced\7-11 clean arch\StoreManagament\WebPortal\bin\Debug\net8.0\Domain.pdb
 C:\Users\user\OneDrive\Desktop\ASP .Net\Advanced\7-11 clean arch\StoreManagament\WebPortal\obj\Debug\net8.0\WebPortal.csproj.AssemblyReference.cache
 C:\Users\user\OneDrive\Desktop\ASP .Net\Advanced\7-11 clean arch\StoreManagament\WebPortal\obj\Debug\net8.0\WebPortal.csproj.Up2Date
+C:\Users\user\OneDrive\Desktop\ASP .Net\Advanced\7-11 clean arch\StoreManagament\WebPortal\obj\Debug\net8.0\WebPortal.sourcelink.json
