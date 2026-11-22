@@ -557,11 +557,13 @@ wwwroot\bootstrap\scss\mixins\_utilities.scss
 wwwroot\bootstrap\scss\mixins\_visually-hidden.scss
 wwwroot\bootstrap\scss\utilities\_api.scss
 wwwroot\bootstrap\scss\vendor\_rfs.scss
-wwwroot\common\AjaxConnection.js
-wwwroot\common\CreateTable.js
+wwwroot\common\common.js
 wwwroot\demo.js
+wwwroot\jsPages\Auth.js
 wwwroot\jsPages\Categories.js
 wwwroot\jsPages\Products.js
+wwwroot\jsPages\Roles.js
+wwwroot\jsPages\Users.js
 wwwroot\twitter-bootstrap\css\bootstrap.css
 wwwroot\twitter-bootstrap\css\bootstrap.css.map
 wwwroot\twitter-bootstrap\css\bootstrap.min.css

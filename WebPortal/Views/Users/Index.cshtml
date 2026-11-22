@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="h3 mb-1">User Management</h1>
+        <p class="text-secondary mb-0">Users, Roles and per-user permission override.</p>
+    </div>
+    <button id="btnRefresh" type="button" class="btn btn-outline-secondary">Refresh</button>
+</div>
+
+<!-- Global message container for alerts -->
+<div id="pageMessage"></div>
+
+<div class="card mb-4 shadow-sm">
+    <div class="card-header bg-primary text-white">
+        <h5 class="card-title mb-0">User Data</h5>
+    </div>
+    <div class="card-body">
+        <input type="hidden" id="userId" />
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="userName" class="form-label">User Name</label>
+                <input id="userName" class="form-control" maxlength="100" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input id="fullName" class="form-control" maxlength="200" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" type="password" class="form-control" maxlength="100" />
+                <div class="form-text">On edit, leave empty to keep the current password.</div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" class="form-control" maxlength="200" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="phoneNumber" class="form-label">Phone</label>
+                <input id="phoneNumber" class="form-control" maxlength="50" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="roleIds" class="form-label">Roles</label>
+                <select id="roleIds" class="form-select" multiple size="3"></select>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-check mt-4">
+                    <input id="isActive" class="form-check-input" type="checkbox" checked />
+                    <label class="form-check-label" for="isActive">Active</label>
+                </div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end gap-2">
+                <button id="btnCancelUser" type="button" class="btn btn-secondary d-none">Cancel</button>
+                <button id="btnSaveUser" type="button" class="btn btn-primary d-none">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <!-- Ensure ID matches the DataTable target in the JS -->
+            <table id="usersTable" class="table table-hover align-middle mb-0 striped-table">
+                <thead class="table-light">
+                    <tr>
+                        <th>User Name</th>
+                        <th>Full Name</th>
+                        <th>Roles</th>
+                        <th>Active</th>
+                        <th class="text-end" style="width:150px;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="usersBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- User Permission Override Modal -->
+<div class="modal fade" id="userPermissionsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">User Permission Override - <span id="permissionUserName"></span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info py-2">
+                    <strong>Use Role</strong> = no user override. Allow/Deny overrides the Role result.
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Screen</th>
+                                <th>Action</th>
+                                <th>Role</th>
+                                <th style="width:180px;">User Override</th>
+                                <th>Effective</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userPermissionsBody"></tbody> 
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="btnSaveUserPermissions" type="button" class="btn btn-primary">Save Permissions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    
+    <script src="~/jsPages/Users.js"></script>
+}

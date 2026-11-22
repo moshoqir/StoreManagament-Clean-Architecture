@@ -10,6 +10,7 @@
         "dependencies": {
           "Application": "1.0.0",
           "Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.33",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -52,6 +53,17 @@
           "lib/net8.0/Mapster.DependencyInjection.dll": {
             "assemblyVersion": "10.0.11.0",
             "fileVersion": "10.0.11.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.33": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.16.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "8.0.33.0",
+            "fileVersion": "8.0.3326.52312"
           }
         }
       },
@@ -503,6 +515,13 @@
       "sha512": "sha512-rdvpA2xSZ8Eyd3hGedz/23oXl07tM+cmPgxlWOOAnAX1LmRl42qtbpu8LFCOEq5Hh66MjdIEg5rj4+HcajTO6w==",
       "path": "mapster.dependencyinjection/10.0.11",
       "hashPath": "mapster.dependencyinjection.10.0.11.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hwq3HqpQD3Y3wLI0TX8o+KYDxbyYR7w5pUKx+Va2MtfgQ9rwh3RzH/dtiwPkmUPfTaT7a5771pmL9X1kqfWD5g==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.33",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.33.nupkg.sha512"
     },
     "Microsoft.Bcl.Cryptography/8.0.0": {
       "type": "package",

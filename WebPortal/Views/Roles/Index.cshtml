@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Roles";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="h3 mb-1">Roles</h1>
+        <p class="text-secondary mb-0">Define each Role, then choose Screen + Action permissions.</p>
+    </div>
+    <button id="btnRefresh" type="button" class="btn btn-outline-secondary">Refresh</button>
+</div>
+
+<!-- Global message container for alerts -->
+<div id="pageMessage"></div>
+
+<div class="card mb-4 shadow-sm">
+    <div class="card-header bg-primary text-white">
+        <h5 class="card-title mb-0">Role Data</h5>
+    </div>
+    <div class="card-body">
+        <input type="hidden" id="roleId" />
+
+        <div class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label for="roleNameEn" class="form-label">Name English</label>
+                <input id="roleNameEn" class="form-control" maxlength="150" placeholder="e.g., Administrator" />
+            </div>
+
+            <div class="col-md-4">
+                <label for="roleNameAr" class="form-label">Name Arabic</label>
+                <input id="roleNameAr" class="form-control" maxlength="150" placeholder="e.g., مدير" />
+            </div>
+
+            <div class="col-md-2">
+                <div class="form-check mb-2">
+                    <input id="roleIsActive" class="form-check-input" type="checkbox" checked />
+                    <label class="form-check-label" for="roleIsActive">Active</label>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-end gap-2">
+                <button id="btnCancelRole" type="button" class="btn btn-secondary d-none">Cancel</button>
+                <button id="btnSaveRole" type="button" class="btn btn-primary d-none">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <!-- Ensure ID matches the DataTable target in the JS -->
+            <table id="rolesTable" class="table table-hover align-middle mb-0 striped-table">
+                <thead class="table-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>English</th>
+                        <th>Arabic</th>
+                        <th>Active</th>
+                        <th class="text-end" style="width:150px;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="rolesBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Role Permission Mapping Modal -->
+<div class="modal fade" id="rolePermissionsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Role Permissions - <span id="permissionRoleName"></span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Screen</th>
+                                <th>Action</th>
+                                <th style="width:120px;" class="text-center">Allowed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rolePermissionsBody"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="btnSaveRolePermissions" type="button" class="btn btn-primary">Save Permissions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/common/common.js"></script>
+    <script src="~/jsPages/Roles.js"></script>
+}

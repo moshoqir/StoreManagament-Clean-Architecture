@@ -14,5 +14,6 @@ namespace Application.Interfaces.Services
         Task UpdateRolePermissionsAsync(int roleId, UpdateRolePermissionsRequest request);
         Task<IReadOnlyList<UserPermissionDto>> GetUserPermissionsAsync(int userId);
         Task UpdateUserPermissionsAsync(int userId, UpdateUserPermissionsRequest request);
+        Task<IReadOnlyList<string>> GetEffectivePermissionsAsync(int userId);
     }
 }

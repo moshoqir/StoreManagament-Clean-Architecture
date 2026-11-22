@@ -1,10 +1,12 @@
-﻿using System.Text.Json;
-using Application.DTOs.Category;
+﻿using Application.DTOs.Category;
+using Application.Security;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebPortal.Common;
 
 namespace WebPortal.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -71,11 +73,12 @@ namespace WebPortal.Controllers
         // 5. Inject HttpClientFactory in the Controller ctor
 
         [HttpGet]
+        [Permission(PermissionCodes.CategoryView)]
         public async Task<IActionResult> GetData()
         {
             // create new connection and name the project (layer) name we want to connect from
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
-
+            ApiRequestHelper.AddBearerToken(client, User);
             // read the response from the api
             HttpResponseMessage response = await client.GetAsync("api/Categories");
 
@@ -84,9 +87,11 @@ namespace WebPortal.Controllers
         }
 
         [HttpGet]
+        [Permission(PermissionCodes.CategoryView)]
         public async Task<IActionResult> GetById(int id)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
+            ApiRequestHelper.AddBearerToken(client, User);
 
             HttpResponseMessage response = await client.GetAsync($"api/Categories/{id}");
 
@@ -94,30 +99,33 @@ namespace WebPortal.Controllers
         }
 
         [HttpPost]
+        [Permission(PermissionCodes.CategoryCreate)]
         public async Task<IActionResult> Create([FromBody] CreateCategoryRequest request)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
-
+            ApiRequestHelper.AddBearerToken(client, User);
             HttpResponseMessage response = await client.PostAsJsonAsync("api/Categories", request);
 
             return await ApiResponseHelper.ToActionResultAsync(response);
         }
 
         [HttpPost]
+        [Permission(PermissionCodes.CategoryUpdate)]
         public async Task<IActionResult> Update([FromBody] UpdateCategoryRequest request, int id)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
-
+            ApiRequestHelper.AddBearerToken(client, User);
             HttpResponseMessage response = await client.PostAsJsonAsync($"api/Categories/{id}", request);
 
             return await ApiResponseHelper.ToActionResultAsync(response);
         }
 
         [HttpPost]
+        [Permission(PermissionCodes.CategoryDelete)]
         public async Task<IActionResult> Delete(int id)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
-
+            ApiRequestHelper.AddBearerToken(client, User);
             HttpResponseMessage response = await client.DeleteAsync($"api/Categories/{id}");
 
             return await ApiResponseHelper.ToActionResultAsync(response);

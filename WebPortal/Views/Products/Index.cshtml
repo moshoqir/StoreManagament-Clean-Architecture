@@ -1,4 +1,8 @@
 ﻿<div class="container mt-4">
+
+    <!-- ADDED: Global message container for alerts (Success/Error messages) -->
+    <div id="pageMessage"></div>
+
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
             <h5 class="card-title mb-0">Add New Product</h5>
@@ -58,7 +62,7 @@
                 <!-- Submit / Cancel Buttons -->
                 <div class="d-flex justify-content-end gap-2">
                     <button type="button" id="cancelProductData" class="btn btn-secondary">Cancel</button>
-                    <button type="submit" id="submitProductData" class="btn btn-primary">Save Product</button>
+                    <button type="submit" id="submitProductData" class="btn btn-primary" data-permission="Product.Create">Save Product</button>
                 </div>
 
             </form>
@@ -69,10 +73,8 @@
 <!-- Table Container -->
 <div id="productData" class="mt-4 container"></div>
 
-
 @section Scripts {
-    <script src="~/common/AjaxConnection.js"></script>
-    <script src="~/common/CreateTable.js"></script>
+    <!-- UPDATED: Replaced multiple fragmented scripts with the new unified common.js -->
+    <script src="~/common/common.js"></script>
     <script src="~/jsPages/Products.js"></script>
-
 }

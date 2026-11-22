@@ -1,20 +1,27 @@
 ﻿using Application.DTOs.Product;
 using Application.Interfaces.Services;
+using Application.Security;
+using Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Contracts.Common;
+using WebApi.Security;
 
 namespace WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public ProductsController(IProductService productService)
+        public ProductsController(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
+            _categoryService = categoryService;
         }
 
         [HttpGet]
@@ -94,6 +101,16 @@ namespace WebApi.Controllers
                     "Product deleted successfully."
                     )
                 );
+        }
+
+
+        // This api to get categories for products. We added it here and separate it from categories api because of the permissions. Sometimes the user may have the permission for products page, but doesn't for categories.
+        [HttpGet("categories")]
+        [Permission(PermissionCodes.ProductView)]
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _categoryService.GetAllAsync();
+            return Ok(ApiResponse.Success(categories, "Categories retrieved successfully."));
         }
     }
 }

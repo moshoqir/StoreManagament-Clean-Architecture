@@ -86,11 +86,18 @@ namespace Infrastructure.Repositories
             // open connection
             await connection.OpenAsync();
 
-            // there are many types to deal with in dapper QueryAsync is one of them (see the others and understand them)
-            var categories = await connection.QueryAsync<Category>
-                ("[dbo].[Category_GetAll]", commandType: System.Data.CommandType.StoredProcedure);
+            var currentCategory = new Dictionary<int, Category>();
 
-            return categories.ToList();
+            // there are many types to deal with in dapper QueryAsync is one of them (see the others and understand them)
+            var categories = await connection.QueryAsync<Category, Product, Category>
+                ("[dbo].[Category_GetAll]"
+                ,(category, product) =>  // here,based on the bussines, have products or not
+                  Map(currentCategory, category, product)
+                ,
+                splitOn: "ProductId",
+                commandType: System.Data.CommandType.StoredProcedure);
+
+            return currentCategory.Values.ToList();
         }
 
         public async Task<Category?> GetByIdAsync(int categoryId)
@@ -172,5 +179,27 @@ namespace Infrastructure.Repositories
                     , ex);
             }
         }
+
+        private static Category Map(Dictionary<int, Category> categories, Category category, Product product)
+        {
+            if (!categories.TryGetValue(category.CategoryId, out var currentCategory))
+            {
+                currentCategory = category;
+                currentCategory.Products = [];
+                categories.Add(currentCategory.CategoryId, currentCategory);
+            }
+
+            if (product is not null && product.ProductId > 0
+                && currentCategory.Products.All(item => item.ProductId != product.ProductId))
+            {
+                currentCategory.Products.Add(product);
+
+
+            }
+        
+            return currentCategory;
+        }
+
+
     }
 }

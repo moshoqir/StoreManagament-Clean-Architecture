@@ -10,7 +10,7 @@ namespace WebPortal.Common
         public static async Task<ContentResult> ToActionResultAsync(HttpResponseMessage response)
         {
             string json = await response.Content.ReadAsStringAsync();
-
+            // Return it exactly as it was received, preserving the original HTTP status code
             return new ContentResult
             {
                 Content = json,

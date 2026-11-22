@@ -1,9 +1,12 @@
 ﻿using Application.DTOs.Product;
+using Application.Security;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebPortal.Common;
 
 namespace WebPortal.Controllers
 {
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -20,6 +23,7 @@ namespace WebPortal.Controllers
         public async Task<IActionResult> GetData()
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
+            ApiRequestHelper.AddBearerToken(client, User);
 
             HttpResponseMessage response = await client.GetAsync("api/Products");
 
@@ -31,6 +35,7 @@ namespace WebPortal.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
+            ApiRequestHelper.AddBearerToken(client, User);
 
             HttpResponseMessage response = await client.GetAsync($"api/Products/{id}");
 
@@ -38,9 +43,11 @@ namespace WebPortal.Controllers
         }
 
         [HttpPost]
+        [Permission(PermissionCodes.ProductCreate)]
         public async Task<IActionResult> Create([FromBody] CreateProductRequest request)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
+            ApiRequestHelper.AddBearerToken(client, User);
 
             HttpResponseMessage response = await client.PostAsJsonAsync("api/Products", request);
 
@@ -51,6 +58,7 @@ namespace WebPortal.Controllers
         public async Task<IActionResult> Update(int id, [FromBody] UpdateProductRequest request)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
+            ApiRequestHelper.AddBearerToken(client, User);
 
             HttpResponseMessage response = await client.PostAsJsonAsync($"api/Products/{id}", request);
 
@@ -61,6 +69,7 @@ namespace WebPortal.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             HttpClient client = _httpClientFactory.CreateClient("WebApi");
+            ApiRequestHelper.AddBearerToken(client, User);
 
             HttpResponseMessage response = await client.DeleteAsync($"api/Products/{id}");
 

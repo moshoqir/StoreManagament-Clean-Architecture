@@ -68,114 +68,97 @@ function getCategories() {
 	})
 }
 $(function () {
-	getData();
+    // THE FIX: Guarantee permissions are loaded into memory BEFORE drawing the table
+    // This prevents the race condition where DataTables draws before permissions arrive!
+    LoadCurrentPermissions(function () {
+        getData();
+        getCategories();
+    });
 
-	getCategories();
+    $(document).on("click", ".infoBtn", function (e) {
+        var row = $(this).closest("tr");
+        var data = row.data("row");
+        var id = data.productId;
+        getById(id);
+    });
 
-	$(document).on("click", ".infoBtn", function (e) {
+    $(document).on("click", ".editBtn", function () {
+        $("#submitProductData").text("Update Product").removeClass("btn-primary").addClass("btn-warning");
+        var data = $(this).closest("tr").data("row");
 
-		var row = $(this).closest("tr");
+        var id = data.productId;
+        var productPrice = data.productPrice;
+        var categoryId = data.categoryId;
 
-		var data = row.data("row")
-		var id = data.productId;
-	 
+        $("#ProductId").val(id);
+        $("#ProductName").val(data.productName);
+        $("#ProductPrice").val(productPrice);
+        $("#CategoryId").val(categoryId);
+    });
 
+    $("#cancelProductData").click(function () {
+        $("#submitProductData").text("Save Product").removeClass("btn-warning").addClass("btn-primary");
+        $("#productForm")[0].reset();
+        $("#ProductId").val("0");
+    });
 
-		getById(id);
+    $(document).on("click", ".deleteBtn", function () {
+        var row = $(this).closest("tr");
+        data = row.data("row");
 
+        var id = data.productId;
+        var name = data.productName;
 
-	})
+        if (confirm(`Are you sure you want to delete ${name}?`)) {
+            deleteData(id);
+        }
+    });
 
-	$(document).on("click", ".editBtn", function () {
-		$("#submitProductData").text("Update Product").removeClass("btn-primary").addClass("btn-warning");
-		var data = $(this).closest("tr").data("row");
+    $("#productForm").submit(function (e) {
+        e.preventDefault();
 
-		// we must here call id also (because we're not mapping all fields here, becuase of full name)
-		var data = $(this).closest("tr").data("row");
+        let isValid = true;
 
-		var id = data.productId;
-		var productPrice = data.productPrice;
-		var categoryId = data.categoryId;
+        let productName = $("#ProductName").val();
+        let productPrice = $("#ProductPrice").val();
+        let categoryId = $("#CategoryId").val();
 
-		$("#ProductId").val(id);
+        $(".error-span").text("").css("color", "transparent");
 
-		$("#ProductName").val(data.productName);
-		$("#ProductPrice").val(productPrice);
-		$("#CategoryId").val(categoryId);
+        if (productName.trim() === "") {
+            isValid = false;
+            $("#ProductNameSpan").text("Product Name is required").css("color", "red");
+        }
 
+        if (productPrice === "" || productPrice <= 0) {
+            isValid = false;
+            $("#ProductPriceSpan").text("Product Price must be greater than 0").css("color", "red");
+        }
 
+        if (!categoryId) {
+            isValid = false;
+            $("#CategoryIdSpan").text("Category Id is required").css("color", "red");
+        }
 
+        var id = $("#ProductId").val();
 
-	})
-
-	$("#cancelProductData").click(function () {
-		$("#submitProductData").text("Save Product").removeClass("btn-warning").addClass("btn-primary");
-		$("#productForm")[0].reset();
-		$("#ProductId").val("0");
-
-
-
-	})
-
-	$(document).on("click", ".deleteBtn", function () {
-		var row = $(this).closest("tr");
-
-		data = row.data("row");
-
-		var id = data.productId;
-		var name = data.productName;
-		console.log(id)
-		console.log(JSON.stringify(data))
-		if (confirm(`Are you sure you want to delete ${name}?`)) {
-			deleteData(id);
-		}
-	})
-
-	$("#productForm").submit(function (e) {
-		e.preventDefault();
-
-		let isValid = true;
-
-		let productName = $("#ProductName").val();
-		let productPrice = $("#ProductPrice").val();
-		let categoryId = $("#CategoryId").val();
-
-
-		$(".error-span").text("").css("color", "transparent");
-
-		if (productName.trim() === "") {
-			isValid = false;
-
-			$("#ProductNameSpan").text("Product Name is required").css("color", "red");
-
-		}
-
-		if (productPrice === "" || productPrice <= 0) {
-			isValid = false;
-
-			$("#ProductPriceSpan").text("Product Price must be greater than 0").css("color", "red");
-		}
-
-
-		if (!categoryId) {
-			isValid = false;
-
-			$("#CategoryIdSpan").text("Category Id is required").css("color", "red");
-		}
-
-
-
-
-		var id = $("#ProductId").val();
-
-
-		if (isValid) {
-
-			if (id !== "0") {
-				updateData(id);
-			}
-			else
-				addData();
-		}
-	})
-})
+        if (isValid) {
+            if (id !== "0") {
+                // Front-end guard for Update
+                if (!HasPermission('Product.Update')) {
+                    ShowMessage('You do not have permission to update products.', 'danger');
+                    return;
+                }
+                updateData(id);
+            }
+            else {
+                // Front-end guard for Create
+                if (!HasPermission('Product.Create')) {
+                    ShowMessage('You do not have permission to create products.', 'danger');
+                    return;
+                }
+                addData();
+            }
+        }
+    });
+});

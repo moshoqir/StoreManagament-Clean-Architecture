@@ -7,6 +7,8 @@ namespace Application.DTOs.Authentication
         public string UserName { get; init; } = string.Empty;
         public string FullName { get; init; } = string.Empty;
         public string AccessToken { get; init; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
+
         public IReadOnlyCollection<string> Permissions { get; init; } = [];
     }
 }

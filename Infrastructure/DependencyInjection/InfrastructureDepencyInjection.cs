@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Application.Interfaces.Repositories;
+using Application.Interfaces.Security;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
+using Infrastructure.Security;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,7 +20,7 @@ namespace Infrastructure.DependencyInjection
         {
             // prepare connection string 
             var connectionString = configuration.GetConnectionString("DefaultConnection")
-                ?? throw new InvalidOperationException("Connection string 'DefaultCoonnectoin ' not found.");
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
             // register connection factory as singleton
             // because connection string is called only once when project starts
@@ -26,6 +28,16 @@ namespace Infrastructure.DependencyInjection
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IPermissionRepository, PermissionRepository>();
+
+            // inject refreshToken
+            services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+
+            services.AddSingleton<IPasswordHasher, Pbkdf2PasswordHasher>();
 
             return services;
         }

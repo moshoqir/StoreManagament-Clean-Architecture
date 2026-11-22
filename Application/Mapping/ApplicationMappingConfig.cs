@@ -41,6 +41,7 @@ namespace Application.Mapping
         {
             // mapper here and used Map to show where we map CategoryName
             config.NewConfig<Product, ProdcutDto>().Map(destination => destination.CategoryName, source => source.Category == null ? null : source.Category.CategoryName);
+            
 
             config.NewConfig<CreateProductRequest, Product>().Ignore(destiation => destiation.ProductId).Ignore(destination => destination.Category);
 

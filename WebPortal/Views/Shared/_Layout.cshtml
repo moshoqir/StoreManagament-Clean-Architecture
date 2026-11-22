@@ -848,11 +848,11 @@
                                 <a class="topbar-link dropdown-toggle drop-arrow-none px-2" data-bs-toggle="dropdown" href="#!" aria-haspopup="false" aria-expanded="false">
                                     <img src="~/assets/images/users/user-1.jpg" width="32" class="rounded-circle me-lg-2 d-flex" alt="user-image" />
                                     <div class="d-lg-flex align-items-center gap-1 d-none">
-                                        <span>
-                                            <h5 class="my-0 lh-1 pro-username">David Dev</h5>
-                                            <span class="fs-xs lh-1">Admin Head</span>
-                                        </span>
-                                        <i class="ti ti-chevron-down align-middle"></i>
+                                    <span>
+                                        <h5 id="navbarUserName" class="my-0 lh-1 pro-username">@User.Identity?.Name</h5>
+                                        <span id="navbarFullName" class="fs-xs lh-1">@User.FindFirst("FullName")?.Value</span>
+                                    </span>
+                                    <i  class="ti ti-chevron-down align-middle"></i>
                                     </div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
@@ -895,7 +895,7 @@
                                     </a>
 
                                     <!-- Logout -->
-                                    <a href="javascript:void(0);" class="dropdown-item fw-semibold">
+                                    <a href="#" id="logout" class="dropdown-item fw-semibold">
                                         <i class="ti ti-logout me-1 fs-lg align-middle"></i>
                                         <span class="align-middle">Log Out</span>
                                     </a>
@@ -991,14 +991,24 @@
                     </a>
                     <div class="collapse" id="dashboards">
                         <ul class="sub-menu">
-                            <li class="side-nav-item">
+                                    <li class="side-nav-item" data-permission="Category.View">
                                         <a asp-controller="Categories" class="side-nav-link">
                                             <span class="menu-text" data-lang="dashboard-ecommerce" >Categories</span>
                                 </a>
                             </li>
-                            <li class="side-nav-item">
+                                <li class="side-nav-item" data-permission="Product.View">
                                 <a asp-controller="Products" class="side-nav-link">
                                     <span class="menu-text" data-lang="dashboard-ecommerce" >Products</span>
+                                </a>
+                            </li>
+                                    <li class="side-nav-item" data-permission="Users.View">
+                                <a asp-controller="Users" class="side-nav-link">
+                                            <span class="menu-text" data-lang="dashboard-ecommerce">Users</span>
+                                </a>
+                            </li>
+                                    <li class="side-nav-item" data-permission="Roles.View">
+                                        <a asp-controller="Roles" class="side-nav-link">
+                                            <span class="menu-text" data-lang="dashboard-ecommerce">Roles</span>
                                 </a>
                             </li>
                             
@@ -3541,25 +3551,30 @@
             </div>
         </div>
     </div>
-    <!-- end offcanvas-->
-    <!-- Vendor js -->
-    @* <script src="~/assets/js/vendors.min.js"></script> *@
 
-    <!-- App js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.3.8/js/dataTables.bootstrap5.js"></script>
     <script src="~/assets/js/app.js"></script>
-    @* 
-
-    
-
-
-  
-    *@
-    
 
     <!-- Dashboard js -->
-    <script src="~/assets/js/pages/dashboard-ecommerce.js"></script> 
-   
-   
+    <script src="~/assets/js/pages/dashboard-ecommerce.js"></script>
+
+    <!-- COMMON.JS MUST LOAD HERE -->
+    <script src="~/common/common.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $(function () {
+            LoadCurrentPermissions();
+            $(document).on("click", "#logout", function (e) {
+                e.preventDefault();
+                Logout();
+            });
+        });
+    </script>
+   
+    
 </body>
 </html>

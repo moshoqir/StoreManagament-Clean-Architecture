@@ -1,4 +1,7 @@
 ﻿<div class="container mt-4">
+	<!-- Add this right here to catch the alerts! -->
+	<div id="pageMessage"></div>
+
 	<div class="card shadow-sm">
 		<div class="card-header bg-primary text-white">
 			<h5 class="card-title mb-0">Add New Category</h5>
@@ -23,7 +26,7 @@
 
 				<div class="d-flex mt-3 justify-content-end gap-2">
 					<button type="button" id="cancelCategoryData" class="btn btn-secondary">Cancel</button>
-					<button type="submit" id="submitCategoryData" class="btn btn-primary">Save Category</button>
+					<button type="submit" id="submitCategoryData" class="btn btn-primary" data-permission="Category.Create">Save Category</button>
 				</div>
 
 			</form>
@@ -33,11 +36,7 @@
 
 <div id="categoryData" class="mt-4 container"></div>
 
-
-
-@section Scripts{
-	<script src="~/common/AjaxConnection.js"></script>
-	<script src="~/common/CreateTable.js"></script>
+@section Scripts {
+	
 	<script src="~/jsPages/Categories.js"></script>
-
 }
